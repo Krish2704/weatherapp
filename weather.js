@@ -7,7 +7,7 @@ $(document).ready(function(){
       latitude=data.lat;
       longitude=data.lon;
     var apiKey = "bb0723185d6fd5480082fe51a35d76c1";
-      var link = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=" + apiKey;
+      var link = "https://crossorigin.me/https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=" + apiKey;
       $.getJSON(link, function(json){
         obj=JSON.stringify(json);
         obj=JSON.parse(obj);
