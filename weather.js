@@ -4,7 +4,7 @@ $(document).ready(function(){
     var longitude;
     if(navigator.geolocation)
     {
-      navigator.geolocation.getCurrentPosition(position)
+      navigator.geolocation.getCurrentPosition(function(position)
       {
       latitude=position.coords.lattude;
       longitude=position.coords.longitude;
@@ -62,7 +62,7 @@ $(document).ready(function(){
           {
             $('#myname').css('color','black');
           }
+        });
       });
-    });
   }
 });
