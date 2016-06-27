@@ -1,17 +1,18 @@
 $(document).ready(function(){
-  var getloc="http//ip-api.com/json/?callback=?";
     var latitude;
     var longitude;
-    if(navigator.geolocation)
+    if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(position)
     {
-      navigator.geolocation.getCurrentPosition(function(position)
-      {
-      latitude=position.coords.lattude;
+      latitude=position.coords.latitude;
       longitude=position.coords.longitude;
+        console.log(latitude);
+        console.log(longitude);
       var apiKey = "bb0723185d6fd5480082fe51a35d76c1";
       var link = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=" + apiKey;
       $.getJSON(link, function(json){
         obj=JSON.stringify(json);
+        console.log(JSON.stringify(json));
         obj=JSON.parse(obj);
         $("#place").html(obj.name+" , "+obj.sys.country);
         $("#position").html(obj.weather[0].description);
