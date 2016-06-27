@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var getloc="http://ip-api.com/json/?callback=?";
+  var getloc="//ip-api.com/json/?callback=?";
   var latitude;
   var longitude;
   $.getJSON(getloc,function(data)
