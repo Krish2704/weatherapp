@@ -39,7 +39,7 @@ $(document).ready(function(){
           if(weatherId>200&&weatherId<300)
             background="thunderstorm.jpg";
           else if(weatherId>=300&&weatherId<=450)
-            background="drizzle.jpg";
+            background="drizzle.jpeg";
           else if(weatherId>450&&weatherId<600)
             background="rain.jpg";
           else if(weatherId>=600&&weatherId<700)
