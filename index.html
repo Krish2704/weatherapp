@@ -4,11 +4,18 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
         <script type="text/javascript" src="weather.js" ></script>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script type="text/javascript">
+              $(window).load(function() {
+        	    $(".loader").fadeOut("slow");
+              })
+            </script>
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href="weather.css" rel="stylesheet">
   </head>
   <body>
+    <div class="loader"></div>
     <div class="container">
       <h1 class="text-responsive text-center" id="appname">Weather App</h1>
       <div id="place" class="text-center"></div>
