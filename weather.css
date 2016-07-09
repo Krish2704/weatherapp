@@ -4,6 +4,7 @@ body{
   background-repeat:none;
   background-position: center center;
   color:white;
+  background-image: url('http://wallpapercave.com/wp/WSjKlp7.jpg');
 }
 .loader {
 	position: fixed;
