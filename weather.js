@@ -25,6 +25,7 @@ $(document).ready(function(){
             $("#temp").html(fahrenheit);
             $("#scale").html("&nbspºF");
             check="fahrenheit";
+            console.log(check);
           }
           else if(check==="fahrenheit"){
             $("#temp").html(celsius);
