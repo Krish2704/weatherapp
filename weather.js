@@ -20,6 +20,7 @@ $(document).ready(function(){
         $("#temp").html(celsius);
         var fahrenheit=parseInt(celsius*9/5 +32);
         //console.log(fahrenheit);
+        var check = "celsius";
         $("button").click(function(){
           if(check==="celsius"){
             $("#temp").html(fahrenheit);
