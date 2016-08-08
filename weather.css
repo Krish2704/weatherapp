@@ -4,6 +4,8 @@ body{
   background-repeat:none;
   background-position: center center;
   color:white;
+  height:100vh;
+  min-height:100vh;
   background-image: url('http://wallpapercave.com/wp/WSjKlp7.jpg');
 }
 .loader {
